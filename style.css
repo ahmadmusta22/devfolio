@@ -1,0 +1,585 @@
+body {
+  background-color: #F5F5F5;
+}
+
+html {
+  scroll-padding-top: 68px;
+}
+
+/* start nav-bar */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+
+}
+
+.navbar-brand {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+
+.navbar-nav a {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0;
+  position: relative;
+
+}
+
+
+
+.navbar-nav a::after {
+  content: " ";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  left: 6px;
+  bottom: -4px;
+  transition: width 0.7s;
+
+}
+
+.navbar-nav a:hover::after {
+  width: 90%;
+}
+
+.nav-item .dropdown {
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+/* end navbar */
+/* ************************** */
+
+
+
+/* start header */
+.header {
+  background-image: url(hero-bg.jpg);
+  height: 100vh;
+  background-position: center bottom;
+  background-size: cover;
+  color: white;
+  background-attachment: fixed;
+
+
+}
+
+.header h1 {
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 86px;
+  font-family: "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.521);
+  height: 100vh;
+  width: 100%;
+}
+
+.header h1::after {
+  content: "";
+  animation-name: header-animation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  bottom: 35%;
+  left: 45%;
+  font-size: 40px;
+
+
+}
+
+@keyframes header-animation {
+  0% {
+    content: "|";
+  }
+
+  3% {
+    content: "D|";
+  }
+
+  5% {
+    content: "De";
+  }
+
+  7% {
+    content: "Des|";
+  }
+
+  10% {
+    content: "Desi|";
+  }
+
+  13% {
+    content: "Desig|";
+  }
+
+  15% {
+    content: "Design|";
+  }
+
+  17% {
+    content: "Designe|";
+  }
+
+  20% {
+    content: "Designer|";
+  }
+
+  24% {
+    content: "Designe|";
+  }
+
+  25% {
+    content: "Design|";
+  }
+
+  27% {
+    content: "Desig|";
+  }
+
+  30% {
+    content: "Desi|";
+  }
+
+  32% {
+    content: "Des|";
+  }
+
+  35% {
+    content: "De|";
+  }
+
+  37% {
+    content: "Dev|";
+  }
+
+  40% {
+    content: "Devel|";
+  }
+
+  42% {
+    content: "Develo|";
+  }
+
+  45% {
+    content: "Develop|";
+  }
+
+  47% {
+    content: "Develope|";
+  }
+
+  50% {
+    content: "Developer|";
+  }
+
+  52% {
+    content: "Develope|";
+  }
+
+  55% {
+    content: "Develop|";
+  }
+
+  57% {
+    content: "Develo|";
+  }
+
+  60% {
+    content: "Devel|";
+  }
+
+  62% {
+    content: "Deve|";
+  }
+
+  65% {
+    content: "Dev|";
+  }
+
+  67% {
+    content: "De|";
+  }
+
+  70% {
+    content: "Des|";
+  }
+
+  72% {
+    content: "Desi|";
+  }
+
+  75% {
+    content: "Desig|";
+  }
+
+  77% {
+    content: "Design|";
+  }
+
+  80% {
+    content: "Designe|";
+  }
+
+  82% {
+    content: "Designer|";
+  }
+
+  85% {
+    content: "Designe|";
+  }
+
+  87% {
+    content: "Design|";
+  }
+
+  90% {
+    content: "Desig|";
+  }
+
+  92% {
+    content: "Desi|";
+  }
+
+  95% {
+    content: "Des|";
+  }
+
+  97% {
+    content: "De|";
+  }
+
+  100% {
+    content: "";
+  }
+}
+
+/* end header */
+/* ****************** */
+
+
+
+/* start card */
+
+.texts span {
+  color:
+    rgb(30, 30, 30);
+  line-height: 26px;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.texts p {
+  color:
+    rgb(78, 78, 78);
+  line-height: 24px;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card-diff {
+  color:
+    rgb(30, 30, 30);
+  line-height: 26px;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.stats span {
+  color:
+    rgb(78, 78, 78);
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.aboutme-card h5 {
+  color:
+    rgb(30, 30, 30);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: relative;
+}
+
+.aboutme-card h5::after {
+  content: " ";
+  position: absolute;
+  width: 18%;
+  height: 3px;
+  left: 1px;
+  bottom: -8;
+  background-color: #0078FF
+}
+
+.aboutme-card p {
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+/* end card */
+/* ************************ */
+
+/* start services */
+.services-icon {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  transition: background-color 0.6s;
+
+
+}
+
+.service-icon-parent {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  border: solid #0078FF 13px;
+  transition: border 0.6s;
+
+}
+
+
+.services-card:hover .service-icon-parent {
+  border: solid 13px #CDE1F8;
+}
+
+.services-card:hover .services-icon {
+  background-color: #0078FF;
+}
+
+.services-titles p {
+  position: relative;
+}
+
+.services-titles p::after {
+  content: "";
+  position: absolute;
+  background-color: #0078FF;
+  height: 5px;
+  width: 5%;
+  right: 48%;
+  top: 40px;
+}
+
+/* start counter */
+.counter-section {
+  background-image: url(post-3.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  background-attachment: fixed;
+
+}
+
+.inner-counter-section {
+  background-color: #2b7ad5c4;
+
+}
+
+.icon-counter-section {
+  border-radius: 50%;
+  width: 95px;
+  height: 95px;
+  border: solid 13px #CDE1F8;
+
+}
+
+/* end counter */
+/* ********************** */
+
+/* start portfolio */
+.inner-portfolio {
+  overflow: hidden;
+}
+
+.inner-portfolio img {
+  transition: all 0.9s ease;
+}
+
+.portfolio:hover .inner-portfolio img {
+  transform: scale(1.3);
+}
+
+.portfolio-titles p {
+  position: relative;
+}
+
+.portfolio-titles p::after {
+  content: "";
+  position: absolute;
+  background-color: #0078FF;
+  height: 5px;
+  width: 5%;
+  right: 48%;
+  top: 40px;
+}
+
+/* end portfolio */
+/* ******************************** */
+
+/* start testimonial */
+
+.carousel-indicators [data-bs-target] {
+
+  height: 15px;
+  width: 15px;
+}
+
+.carousel {
+  background-image: url(overlay-bg.jpg);
+  background-attachment: fixed;
+}
+
+.inner-carousel {
+  background-color: #499af0b6;
+}
+
+/* end testimonial */
+/* ***************************** */
+
+/* start blog */
+
+.w-10 {
+  width: 9%;
+}
+
+.blog-card-parent {
+  transform: translateY(-25px);
+}
+
+.blog-texts a {
+  color: black;
+  !important
+}
+
+.blog-texts a:hover {
+  color: #0078FF;
+}
+
+.blog-texts a {
+  transition: color 1s;
+}
+
+.blog-titles p {
+  position: relative;
+}
+
+.blog-titles p::after {
+  content: "";
+  position: absolute;
+  background-color: #0078FF;
+  height: 5px;
+  width: 5%;
+  right: 48%;
+  top: 40px;
+}
+
+/* end blog */
+
+
+/* Start form */
+
+.form {
+  background-image: url(overlay-bg.jpg);
+  background-attachment: fixed;
+}
+
+.inner-form {
+  background-color: #499af0c5;
+}
+
+
+.form-socialmedia a {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: solid #0078FF 3px;
+}
+
+.som-icon {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+
+}
+
+.som-icon a {
+  transition: border 1s;
+  transition: background-color 1s;
+}
+
+
+.som-icon:hover a {
+  border: solid 5px #CDE1F8;
+  background-color: #0078FF;
+}
+
+.form h2 {
+  position: relative;
+}
+
+.form h2::after {
+  content: "";
+  position: absolute;
+  background-color: #0078FF;
+  height: 3px;
+  width: 15%;
+  left: -1px;
+  top: 43px;
+}
+
+.button-form button {
+  transition: border 0.5s;
+  border: 5px solid white;
+}
+
+.button-form:hover button {
+  border: 5px solid #CDE1F8;
+}
+
+/* end form */
+
+
+.arrow {
+  background-color: #0078FF;
+  height: 35px;
+  width: 35px;
+  right: 15px;
+  bottom: 15px;
+  z-index: 2;
+}
+
+
+@media (min-width: 640px) {
+  .img-card img {
+    width: 80%;
+  }
+
+
+}
+
+@media (min-width: 768px) {
+
+  .img-card img {
+    width: 90%;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .services-card {
+    padding: 0px 10px;
+  }
+}
